@@ -4,7 +4,7 @@
 const express = require("express"); //require 명령어로 express 모듈 다운
 const app = express(); //express 실행
 
-const PORT = 3000;
+
 
 // 라우팅
 const home = require("./routes/home");
@@ -15,8 +15,7 @@ app.set("view engine", "ejs"); //html 코드를 어떤 엔진으로 해석할지
 
 app.use("/", home); // use -> 미들 웨어를 등록해주는 메서드. 루트 경로로 오면 home으로 이동
 
-app.listen(PORT, function () {
-    console.log("서버 가동");
-});
-// listen으로 서버 띄움. 3000번 포트, 2번째 파라미터에 콜백함수
+module.exports = app;
 
+//package.json만 있으면 npm install 명령어를 통해 node_modules를 생성해주기 때문에 node_modules 폴더를 깃허브에
+//올리지 않아도 됨.
