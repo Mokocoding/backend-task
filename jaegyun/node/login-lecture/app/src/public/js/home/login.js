@@ -1,4 +1,16 @@
 "use strict"
+//  DOM -> Document Object Model (문서 객체 모델)
 
-console.log("hello");
-console.log("bye");
+const id =document.querySelector("#id"), //#id = 선택자 // # - <input id = "id">
+    paword = document.querySelector("#psword"),
+    loginBtn = document.querySelector("button");
+
+loginBtn.addEventListener("click", login);
+
+function login() {
+    const req ={
+        id: id.value,
+        psword: psword.value,
+    };   
+    console.log(req);
+}
