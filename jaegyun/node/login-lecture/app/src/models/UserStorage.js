@@ -25,7 +25,7 @@ class UserStorage {
         const userInfo = usersKeys.reduce((newUser, info) => {
             newUser[info] =users[info][idx];
             return newUser;
-        },{});   
+        }, {});   
         
         return userInfo;
     }
