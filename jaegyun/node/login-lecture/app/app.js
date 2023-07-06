@@ -20,10 +20,10 @@
 
 //묘듈
 const express = require("express"); //express
-const app = express();
+const dotenv = require("dotenv") //어떤 os에서도 환경변수 등록하고 가져올수있음
+dotenv.config(); 
 
- 
-const PORT = 3000;
+const app = express();
 
 //라우팅
 const home = require("./src/routes/home");
