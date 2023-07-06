@@ -12,7 +12,7 @@ function login() {
         id: id.value,
         psword: psword.value,
     };
-    console.log(req,JSON.stringify(req));
+    
 
     fetch("/login", {
         method: "POST",
@@ -21,6 +21,15 @@ function login() {
         },
         body: JSON.stringify(req),
     })
-    .then((res) => res.json())
-    .then(console.log);
+        .then((res) => res.json())
+        .then((res) => {
+            if (res.success){
+                location.href = "/";
+            } else {
+              alert(res.msg);
+            }
+        })
+        .catch((err) => {
+            console.error("로그인 중 에러 발생");
+        });
 }
