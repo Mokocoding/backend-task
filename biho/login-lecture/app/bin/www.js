@@ -1,7 +1,7 @@
 "use strict";
 
 const app = require("../app"); // app.js의 app을 받아옴
-const PORT = 3000; //포트번호
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
     console.log("서버 가동");

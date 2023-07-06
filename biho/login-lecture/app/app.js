@@ -3,6 +3,9 @@
 // 모듈
 const express = require("express"); //require 명령어로 express 모듈 다운
 const bodyParser = require("body-parser");
+const dotenv = require("dotenv");
+dotenv.config();
+
 const app = express(); //express 실행
 
 
