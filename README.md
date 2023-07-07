@@ -13,9 +13,9 @@
 ### 전략
 
 - 현재 레포지토리에서 참여자별로 각자 Fork 해서 진행
-  - [정비호]()
-  - [정재균]()
-  - [원동건]()
+  - [정비호](https://github.com/hobiJeong/backend-task/tree/develop)
+  - [정재균](https://github.com/jaegyun0320/backend-task/tree/develop)
+  - [원동건](https://github.com/CBWDG/backend-task/tree/master)
 - 각 참여자 레포지토리의 devleop 브랜치에서 작업
 
 - 각 참여자의 이름으로 생성된 폴더에서 작업
